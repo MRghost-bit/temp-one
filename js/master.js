@@ -278,14 +278,12 @@ theLinks.onclick = (e)=>{e.stopPropagation();};
 //scroll to top button
 let scrollTopButton = document.querySelector(".scroll-top");
 //show button when scrolling
-window.onscroll = function () {
-
+document.onscroll = ()=>{
 	if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-		scrollTopButton.style.display = "block"
+		scrollTopButton.style.display = "inline-block";
 	} else {
-		scrollTopButton.style.display = "none"
+		scrollTopButton.style.display = "none";
 	}
-
 }
 //scroll to top function
 scrollTopButton.onclick = ()=>{
