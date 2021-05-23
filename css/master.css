@@ -25,6 +25,7 @@ body{
 	z-index: 1001;
 	height: 100vh;
 	border: 1px solid #AEAEAE;
+	transition:0.5s;
 }
 .settings-box.open{
 	left: 0;
