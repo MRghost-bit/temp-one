@@ -15,6 +15,24 @@ body{
 	padding-right: 15px;
 	margin: auto;
 }
+/*start scroll top */
+.scroll-top{
+	position: fixed;
+	width: 25px;
+	z-index: 1000;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+	background: var(--main-color);
+	font-size: 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	display: none;
+}
+/*start scroll top */
+
 /*start settings box*/
 .settings-box{
 	position: fixed;
@@ -25,7 +43,7 @@ body{
 	z-index: 1001;
 	height: 100vh;
 	border: 1px solid #AEAEAE;
-	transition:0.5s;
+	transition:left 0.3s;
 }
 .settings-box.open{
 	left: 0;
@@ -257,7 +275,7 @@ body{
 	z-index: 2;
 	color: #fff;
 	text-align: center;
-	width: 95%;
+	width: 90%;
 }
 .intro-text h1{
 	font-size: 35px;
@@ -309,7 +327,7 @@ body{
 }
 .about-us .img-box img{
 	width: 270px;
-	margin-top: 50%;
+	margin-top: 30px;
 }
 @media (max-width: 767px){
 	.about-us{

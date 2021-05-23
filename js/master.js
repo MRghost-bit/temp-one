@@ -274,3 +274,21 @@ document.addEventListener("click",(e)=>{
 
 });
 theLinks.onclick = (e)=>{e.stopPropagation();};
+
+//scroll to top button
+let scrollTopButton = document.querySelector(".scroll-top");
+//show button when scrolling
+window.onscroll = function () {
+
+	if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+		scrollTopButton.style.display = "block"
+	} else {
+		scrollTopButton.style.display = "none"
+	}
+
+}
+//scroll to top function
+scrollTopButton.onclick = ()=>{
+	document.body.scrollTop = 0; 
+	document.documentElement.scrollTop = 0;
+}
